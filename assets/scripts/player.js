@@ -55,6 +55,7 @@ class Controller extends cc.Component {
     checkCollision = () => false
 
 
+
     onKeyDown(e) {
         this.map.set(e.keyCode, true)
         if (!this.isWalking && !this.isDead) {
@@ -129,8 +130,11 @@ class Controller extends cc.Component {
             this.getComponent(cc.Animation).stop(d)
             this.getComponent(cc.Animation).setCurrentTime(0, d)
         })
-
     }
+
+    setDead = (isDead) => { this.isDead = isDead }
+
+
 
 
 
@@ -199,7 +203,7 @@ class Controller extends cc.Component {
 
     }
 
-    update(dt) {}
+    update(dt) { }
 
 
 }

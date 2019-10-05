@@ -61,6 +61,8 @@ const ICE_2_ID = 4646
 const ICE_WALL_ID = 4456
 const STAIRS_ID = 4264
 
+const LEVEL_MAX = 2
+
 
 @ccclass
 class Controller extends cc.Component {
@@ -79,6 +81,8 @@ class Controller extends cc.Component {
 
     }) winLabel = null
 
+    level = 1
+
     onLoad() {
         this.createPlayer()
         this.createMap()
@@ -90,7 +94,9 @@ class Controller extends cc.Component {
 
     createMap() {
         this.tiledMap = this.node.getComponentInChildren(cc.TiledMap)
-        this.tiledLayer = this.tiledMap.getLayer('normal')
+        this.tiledLayer = this.tiledMap.getLayer(`level_${this.level}`)
+
+
     }
 
 
@@ -169,7 +175,31 @@ class Controller extends cc.Component {
         let win = cc.instantiate(this.winLabel);
         win.zIndex = cc.macro.MAX_ZINDEX;
         win.position = cc.v2(0, 260)
+        this.playerNode.getComponent("player").setDead(true)
         this.node.addChild(win);
+        if (this.level < LEVEL_MAX) {
+            this.node.runAction(cc.sequence(cc.delayTime(5), cc.callFunc(() => {
+                this.tiledLayer.destroy()
+                this.level = this.level + 1
+                this.tiledLayer = this.tiledMap.getLayer(`level_${this.level}`)
+                this.node.getComponentInChildren(cc.Label).destroy();
+                let tilemap = this.node.getComponentInChildren(cc.TiledMap).node
+                let obj = this.node.getComponentInChildren(cc.TiledMap).getObjectGroup("objects").getObject('start')
+                this.playerNode.position = converTileMapRefToNodeRef({
+                    x: obj.x + obj.width / 2,
+                    y: obj.y - obj.height / 2
+                }, tilemap)
+                this.iceCount = 0
+                this.tiledLayer._tiles.forEach(tileID => {
+                    if (tileID === ICE_ID || tileID === ICE_2_ID) {
+                        this.iceCount += 1
+                    }
+                });
+                this.playerNode.getComponent("player").setDead(false)
+
+            })))
+        }
+
     }
 
     gameOver() {
