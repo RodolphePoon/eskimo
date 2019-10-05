@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-up" width="9" height="13" tilewidth="16" tileheight="16" nextobjectid="5">
+ <tileset firstgid="1" name="pokemon-emeraude" tilewidth="16" tileheight="16" tilecount="12288" columns="192">
+  <image source="pokemon-emeraude.png" width="3072" height="1024"/>
+  <terraintypes>
+   <terrain name="Nouveau terrain" tile="0"/>
+   <terrain name="mout" tile="0"/>
+  </terraintypes>
+  <tile id="1740" terrain=",,,0"/>
+  <tile id="1741" terrain=",,0,0"/>
+  <tile id="1742" terrain=",,0,"/>
+  <tile id="1932" terrain=",0,,0"/>
+  <tile id="1933" terrain="0,0,0,0"/>
+  <tile id="1934" terrain="0,,0,"/>
+  <tile id="2124" terrain=",0,,"/>
+  <tile id="2125" terrain="0,0,,"/>
+  <tile id="2126" terrain="0,,,"/>
+  <tile id="4259">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="rock"/>
+   </properties>
+   <objectgroup draworder="index" name="rock">
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="4262">
+   <properties>
+    <property name="canWalkOn" type="bool" value="true"/>
+   </properties>
+   <objectgroup draworder="index" name="hole"/>
+  </tile>
+  <tile id="4263">
+   <properties>
+    <property name="canWalkOn" type="bool" value="true"/>
+    <property name="type" value="stairs"/>
+   </properties>
+   <objectgroup draworder="index">
+    <properties>
+     <property name="toto" value="samuel"/>
+    </properties>
+   </objectgroup>
+  </tile>
+  <tile id="4449">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="4452">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="4453">
+   <properties>
+    <property name="canWalkOn" type="bool" value="true"/>
+    <property name="type" value="ice"/>
+   </properties>
+   <objectgroup draworder="index" name="ice"/>
+  </tile>
+  <tile id="4454">
+   <properties>
+    <property name="canWalkOn" type="bool" value="true"/>
+    <property name="type" value="shattered Ice"/>
+   </properties>
+   <objectgroup draworder="index" name="shattered ice"/>
+  </tile>
+  <tile id="4455">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="ice wall"/>
+   </properties>
+   <objectgroup draworder="index">
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="4641">
+   <properties>
+    <property name="canWalkOn" type="bool" value="true"/>
+    <property name="type" value="snow"/>
+   </properties>
+  </tile>
+  <tile id="4645">
+   <properties>
+    <property name="canWalkOn" type="bool" value="true"/>
+    <property name="type" value="ice"/>
+   </properties>
+   <objectgroup draworder="index" name="ice"/>
+  </tile>
+  <tile id="4646">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="rock"/>
+   </properties>
+   <objectgroup draworder="index" name="rock">
+    <object id="1" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="4833">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="4837">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="4838">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="5029">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="5030">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="5031">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="5221">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="5223">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="5413">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="5415">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="5605">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="6373">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="6374">
+   <properties>
+    <property name="canWalkOn" type="bool" value="false"/>
+    <property name="type" value="wall"/>
+   </properties>
+  </tile>
+  <tile id="8216" terrain=",,,1"/>
+  <tile id="8217" terrain=",,1,1"/>
+  <tile id="8218" terrain=",,1,"/>
+  <tile id="8408" terrain=",1,,1"/>
+  <tile id="8409" terrain="1,1,1,1"/>
+  <tile id="8410" terrain="1,,1,"/>
+  <tile id="8600" terrain=",1,,"/>
+  <tile id="8601" terrain="1,1,,"/>
+  <tile id="8602" terrain="1,,,"/>
+ </tileset>
+ <layer name="cracked" width="9" height="13">
+  <data encoding="base64">
+   ZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAAZxEAAGcRAABnEQAA
+  </data>
+ </layer>
+ <layer name="normal" width="9" height="13">
+  <data encoding="base64">
+   phMAAGIRAABiEQAApxMAAGgRAACnEwAAYhEAAGIRAACoEwAA5hgAACISAAAiEgAAZhEAAGYRAAAnEgAAIhIAACISAADnGAAA5hgAACISAAAiEgAAZhEAAGYRAABmEQAAIhIAACISAADnGAAA5hgAACISAAAiEgAApBAAAGYRAABmEQAAIhIAACISAADnGAAA5hgAACISAAAiEgAAIhIAACISAAAiEgAAIhIAACISAADnGAAA5hgAACISAAAiEgAAIhIAACISAAAiEgAAIhIAACISAADnGAAA5hgAACISAAAiEgAAIhIAACISAAAiEgAAIhIAACISAADnGAAA5hgAACISAAAiEgAAIhIAACISAAAiEgAAIhIAACISAADnGAAA5hgAACISAAAiEgAAIhIAACISAAAiEgAAIhIAACISAADnGAAA5hgAACISAAAiEgAAIhIAACISAAAiEgAAIhIAACISAADnGAAA5hgAACISAAAiEgAAIhIAACISAAAiEgAAIhIAACISAADnGAAA5hgAACISAAAiEgAAIhIAACISAAAiEgAAIhIAACISAADnGAAApxMAAOISAADiEgAA4hIAACISAADiEgAA4hIAAOISAACnEwAA
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="2" name="finish" x="64" y="0" width="16" height="16"/>
+  <object id="3" name="start" x="64" y="192" width="16" height="16"/>
+ </objectgroup>
+</map>
